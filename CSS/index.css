@@ -1,0 +1,265 @@
+:root{
+    --bg--primary: #10091d;
+    --bg--secondary: #28193d;
+    --bg--tertiary: #46315c;
+    --bg--quarternary: #68507b;
+
+    --text--primary : #d9d8d9;
+    --text--secondary: #b3a3ba;
+    --text-tertiary: #8d769a;
+}
+
+[data-theme=light]{
+    --bg--primary: #8d769a;
+    --bg--secondary: #b3a3ba;
+    --bg--tertiary: #d9d8d9;
+    --bg--quarternary: #68507b;
+
+    --text--primary : #46315c;
+    --text--secondary: #28193d;
+    --text-tertiary: #10091d;
+}
+
+body {
+    background: var(--bg--primary);
+}
+
+.App {
+    scrollbar-color: var(--text--primary);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+/*
+NAME TAG -------------------------------------------------------------
+*/
+.name-tag-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-inline: 6rem; padding: 5rem 0;
+}
+
+.name-tag {
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 10px var(--bg--quarternary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: var(--bg--secondary);
+    padding: 5px;
+    width: 500px;
+    border: 5px solid var(--bg--quarternary);
+}
+
+.name-tag h1, .name-tag h2{
+    color: var(--text--primary);
+}
+
+.name-tag h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.name-tag h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.name {
+    align-items: center;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: var(--text--secondary);
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 250px;
+}
+
+.name h2 {
+    font-size: 5rem;
+    color: var(--bg--primary);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*
+End of NAME TAG ------------------------------------------------------
+*/
+
+/*
+SKILLS ---------------------------------------------------------------
+*/
+
+.skill-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+    margin-inline:6rem; padding: 5rem 0;
+}
+
+.skill-wrapper,.skill-wrapper-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%
+}
+
+.skill-wrapper-section {
+    justify-content: center
+}
+.skill-top-header {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.skill-top-header h1 {
+    font-size: 2rem;
+}
+
+.skill-top-header h1,.skill-top-header h2 {
+    color: var(--text--primary);
+}
+
+.skill-top-header h2 {
+    font-size: 1.2rem;
+    margin: 0
+}
+
+.skill-extra {
+    margin-left: 6rem
+}
+
+.skills {
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%
+}
+
+.skills h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center
+}
+
+.skill:last-child {
+    justify-self: flex-start
+}
+
+.skill {
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 10px var(--bg--quarternary);
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+    background: var(--bg--secondary);
+    padding: 5px;
+    width: 150px
+}
+
+.skill p {
+    font-size: 1rem;
+    color: var(--text--secondary);
+    margin: 0
+}
+
+.skill:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.skill svg {
+    border-radius: 10px
+}
+
+/*
+End of SKILLS ------------------------------------------------
+ */
+
+/*
+BIO ---------------------------------------------------------------
+*/
+
+.bio-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+    margin-inline:6rem; padding: 5rem 0;
+}
+
+.bio-wrapper,.bio-wrapper-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%
+}
+
+.bio-wrapper-section {
+    justify-content: center
+}
+.bio-top-header {
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.bio-top-header h1 {
+    font-size: 2rem
+}
+
+.bio-top-header h1{
+    color: var(--text--primary);
+}
+
+.bio {
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 10px var(--bg--quarternary);
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    justify-content: space-evenly;
+    background: var(--bg--secondary);
+    padding: 5px;
+}
+
+.bio p {
+    margin-left: 25px;
+    font-size: 1.2rem;
+    color: var(--text--secondary);
+}
+
+/*
+End of BIO ------------------------------------------------
+ */
